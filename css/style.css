@@ -1,0 +1,27 @@
+body{
+	padding:0px;
+	margin:0px;
+	background: #006000;
+}
+
+.moon{
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	box-shadow: 15px 15px 0 0 white;
+	right:10%;
+	top: 20px;
+	animation: moonMove infinite;
+	animation-duration:2s;
+
+	-webkid-animation: moonMove infinite;
+	-webkid-animation-duration:2s;
+
+}
+
+
+@keyframes moonMove{
+	from {top:0px;}
+	to {top:25px;}
+}
