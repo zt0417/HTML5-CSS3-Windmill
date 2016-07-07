@@ -1,0 +1,224 @@
+body{
+	padding:0px;
+	margin:0px;
+	background: #006000;
+}
+
+.moon{
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	box-shadow: 15px 15px 0 0 white;
+	right:15%;
+	top: 40px;
+	animation: moonMove infinite;
+	animation-duration:2s;
+
+	-webkit-animation: moonMove infinite;
+	-webkit-animation-duration:2s;
+
+}
+
+
+@keyframes moonMove{
+	from {top:0px;}
+	to {top:25px;}
+}
+
+.wmd{
+   -webkit-transform: scale(.7);
+	position: absolute;
+	top: 30%;
+	left:300px;
+	-webkit-perspective: 1000px;
+	perspective: 1000px;
+}
+
+.base{
+}
+
+.blades{
+	width: 350px;
+	height: 350px;
+	left: 500px;
+	top: 130px;
+	z-index:2;
+	border-radius: 50%;
+	position: absolute;
+	margin-top: -150px;
+	margin-left: -300px;
+	animation: turn 5s linear infinite;
+}
+
+@keyframes turn{
+	0%{
+		transform:rotate(0deg);
+	}
+
+	100%{
+		transform:rotate(360deg);
+	}
+}
+
+.bladeOne{
+	background: white;
+	position:absolute;
+	width:41px;
+	height:139px;
+	top:-10px;
+	left:150.5px;
+	transform:rotate(0deg);
+	display:inline-block;
+	background:
+		linear-gradient(135deg, transparent 20px, white 0),
+		linear-gradient(225deg, transparent 20px, white 0),
+		linear-gradient(315deg, transparent 20px, white 0),
+		linear-gradient(45deg, transparent  20px,  white 0);
+	background-position: top left, top right, bottom right, bottom left;
+	background-size: 50% 50%;
+	background-repeat: no-repeat;
+}
+
+.bladeTwo{
+	background:white;
+	position:absolute;
+	width:41px;
+	height:139px;
+	top:105.5px;
+	left:41px;
+	transform:rotate(90deg);
+	display:inline-block;
+	background:
+		linear-gradient(135deg, transparent 20px, white 0),
+		linear-gradient(225deg, transparent 20px, white 0),
+		linear-gradient(315deg, transparent 20px, white 0),
+		linear-gradient(45deg, transparent  20px,  white 0);
+	background-position: top left, top right, bottom right, bottom left;
+	background-size: 50% 50%;
+	background-repeat: no-repeat;
+}
+
+.bladeThree{
+	background:white;
+	position:absolute;
+	width:41px;
+	height:139px;
+	top:105.5px;
+	right:41px;
+	transform:rotate(-90deg);
+	display:inline-block;
+	background:
+		linear-gradient(135deg, transparent 20px, white 0),
+		linear-gradient(225deg, transparent 20px, white 0),
+		linear-gradient(315deg, transparent 20px, white 0),
+		linear-gradient(45deg, transparent  20px,  white 0);
+	background-position: top left, top right, bottom right, bottom left;
+	background-size: 50% 50%;
+	background-repeat: no-repeat;
+}
+
+.bladeFour{
+	background:white;
+	position:absolute;
+	width:41px;
+	height:139px;
+	bottom:-10px;
+	left:150.5px;
+	transform:rotate(180deg);
+	display:inline-block;
+	background:
+		linear-gradient(135deg, transparent 20px, white 0),
+		linear-gradient(225deg, transparent 20px, white 0),
+		linear-gradient(315deg, transparent 20px, white 0),
+		linear-gradient(45deg, transparent  20px,  white 0);
+	background-position: top left, top right, bottom right, bottom left;
+	background-size: 50% 50%;
+	background-repeat: no-repeat;
+}
+
+
+.vaneOne{
+	width:1px;
+	height:350px;
+	left:175px;
+	background:white;
+	position:absolute;
+	transform:rotate(90deg);
+}
+
+.vaneTwo{
+	width:1px;
+	height:350px;
+	left:175px;
+	background:white;
+	position:absolute;
+	transform:rotate(180deg);
+}
+
+.vaneThree{
+	width:1px;
+	height:350px;
+	left:175px;
+	background:white;
+	position:absolute;
+	transform:rotate(270deg);
+}
+
+.vaneFour{
+	width:1px;
+	height:350px;
+	left:175px;
+	background:white;
+	position:absolute;
+	transform:rotate(-90deg);
+}
+
+.base .bottom_base{
+	position:absolute;
+	width:90px;
+	height:100px;
+	left:300px;
+	border-right: 30px solid transparent;
+	border-left: 30px solid transparent;
+	border-bottom: 380px solid white;
+	opacity:.8;
+	z-index:-1;
+	top:42.5px;
+}
+
+ul{
+	position:absolute;
+	top:180px;
+	left:-30px;
+}
+li{
+	width:10px;
+	height:10px;
+	background:white;
+	padding:2px;
+	display:block;
+	margin: 30px;
+	box-shadow: inset 0px -2px 0px lightgray; 
+}
+
+li:nth-child(2){
+	position:absolute;
+	top:-55px;
+	left:25px;
+}
+
+li:nth-child(1){
+	position:absolute;
+	top:25px;
+	left:55px;
+}
+
+li:nth-child(3){
+	position:absolute;
+	top:85px;
+	left:40px;
+}
+
+
+
